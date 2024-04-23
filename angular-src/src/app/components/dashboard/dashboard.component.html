@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="jumbotron text-center">
+        <h1>Welcome to Your Dashboard</h1>
+        <p class="lead">Explore and manage your account</p>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">User Profile</h3>
+                    <p class="card-text">View and update your profile information</p>
+                    <a [routerLink]="['/profile']" class="btn btn-primary">View Profile</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">Home Page</h3>
+                    <p class="card-text">Return to the home section</p>
+                    <a [routerLink]="['/']" class="btn btn-primary">Go Home</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">Logout Activity</h3>
+                    <p class="card-text">Logout from your account</p>
+                    <a class="btn btn-dark" (click)="onLogoutClick()">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,15 @@
+<div class="container">
+  <div *ngIf="user" class="jumbotron text-center mb-3">
+    <h1>Hello, {{ user.name }}</h1>
+    <p class="lead">Welcome to your profile</p>
+  </div>
+  <div class="card" *ngIf="user">
+    <div class="card-body">
+      <h2 class="card-title">User Information</h2>
+      <ul class="list-group">
+        <li class="list-group-item bg-light">Username: {{ user.username }}</li>
+        <li class="list-group-item bg-light">Email: {{ user.email }}</li>
+      </ul>
+    </div>
+  </div>
+</div>
